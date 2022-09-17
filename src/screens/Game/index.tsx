@@ -13,6 +13,7 @@ import { GameParams } from '../../@types/navigation';
 
 import { Background } from '../../components/Background';
 import { DuoCard, DuoCardProps } from '../../components/DuoCard';
+import { DuoMatch } from '../../components/DuoMatch';
 import { Heading } from '../../components/Heading';
 
 interface RouteParams {
@@ -23,6 +24,7 @@ interface RouteParams {
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardProps[]>([]);
+  const [discordDuoSelected, setDiscordDuoSelected] = useState('gi')
 
   const navigation = useNavigation();
   const route = useRoute();
@@ -90,6 +92,12 @@ export function Game() {
           )}
         >
         </FlatList>
+
+        <DuoMatch 
+          visible={discordDuoSelected.length > 0}
+          discord="giselle#7777"
+          onClose={() => setDiscordDuoSelected('')}
+        />
       </SafeAreaView>
     </Background>
   );
