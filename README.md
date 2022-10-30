@@ -18,8 +18,8 @@ This project was developed during the NLW Bootcamp by Rocketseat. The project is
 ## Screenshots 📷
 
 <div style="display:flex; flex-wrap:wrap;">
-<img src="public/screen_shot_empty_state.png" width="300px" />
 <img src="public/screen_shot_home.png" width="300px" />
+<img src="public/screen_shot_empty_state.png" width="300px" />
 <img src="public/screen_shot_get_discord.jpeg" width="300px" />
 </div>
 
