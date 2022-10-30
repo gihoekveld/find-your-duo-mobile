@@ -42,3 +42,8 @@ npm install
 npm start
 ```
 
+## Acknowledgments
+
+> This project was developed during the Ignite Bootcamp by Rocketseat.
+
+
